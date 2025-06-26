@@ -36,11 +36,11 @@ node ("docker") {
     }
 
     stage ("Docker Build") {
-      sh "docker build -t ${DOCKER_USER}/myapache:1.0.0 ."
+      sh "docker build -t ${DOCKER_USER}/myapache:3.0.0 ."
     }
 
     stage ("Docker Push") {
-      sh "docker push ${DOCKER_USER}/myapache:1.0.0"
+      sh "docker push ${DOCKER_USER}/myapache:3.0.0"
     }
     }
 }
