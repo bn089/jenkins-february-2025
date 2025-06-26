@@ -43,8 +43,6 @@ node ("docker") {
       sh "docker push ${DOCKER_USER}/myapache:1.0.0"
     }
     }
-
-
 }
 }
 }
